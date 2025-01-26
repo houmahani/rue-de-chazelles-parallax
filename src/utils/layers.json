@@ -1,0 +1,202 @@
+[
+  {
+    "name": "model",
+    "texture": "/model.jpg",
+    "position": { "x": 0, "y": 0, "z": 0 },
+    "scale": 1.5,
+    "visible": true,
+    "opacity": 0.5
+  },
+  {
+    "name": "layer 1",
+    "texture": "/layer1.png",
+    "position": { "x": 0, "y": 0, "z": 0.5 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 2",
+    "texture": "/layer2.png",
+    "position": { "x": 0, "y": 0, "z": 0.49 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 3",
+    "texture": "/layer3.png",
+    "position": { "x": 0, "y": 0, "z": 0.47 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 4",
+    "texture": "/layer4.png",
+    "position": { "x": 0, "y": 0, "z": 0.45 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 5",
+    "texture": "/layer5.png",
+    "position": { "x": 0, "y": 0, "z": 0.43 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 6",
+    "texture": "/layer6.png",
+    "position": { "x": 0, "y": 0, "z": 0.41 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 7",
+    "texture": "/layer7.png",
+    "position": { "x": 0, "y": 0, "z": 0.39 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 8",
+    "texture": "/layer8.png",
+    "position": { "x": 0, "y": 0, "z": 0.37 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 9",
+    "texture": "/layer9.png",
+    "position": { "x": 0, "y": 0, "z": 0.35 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 10",
+    "texture": "/layer10.png",
+    "position": { "x": 0, "y": 0, "z": 0.33 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 11",
+    "texture": "/layer11.png",
+    "position": { "x": 0, "y": 0, "z": 0.31 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 12",
+    "texture": "/layer12.png",
+    "position": { "x": 0, "y": 0, "z": 0.29 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 13",
+    "texture": "/layer13.png",
+    "position": { "x": 0, "y": 0, "z": 0.27 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 14",
+    "texture": "/layer14.png",
+    "position": { "x": 0, "y": 0, "z": 0.25 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 15",
+    "texture": "/layer15.png",
+    "position": { "x": 0, "y": 0, "z": 0.23 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 16",
+    "texture": "/layer16.png",
+    "position": { "x": 0, "y": 0, "z": 0.21 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 17",
+    "texture": "/layer17.png",
+    "position": { "x": 0, "y": 0, "z": 0.19 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 18",
+    "texture": "/layer18.png",
+    "position": { "x": 0, "y": 0, "z": 0.17 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 19",
+    "texture": "/layer19.png",
+    "position": { "x": 0, "y": 0, "z": 0.15 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 20",
+    "texture": "/layer20.png",
+    "position": { "x": 0, "y": 0, "z": 0.13 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 21",
+    "texture": "/layer21.png",
+    "position": { "x": 0, "y": 0, "z": 0.11 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 22",
+    "texture": "/layer22.png",
+    "position": { "x": 0, "y": 0, "z": 0.02 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 23",
+    "texture": "/layer23.png",
+    "position": { "x": 0, "y": 0, "z": 0.03 },
+    "scale": 1.4,
+    "visible": true,
+    "opacity": 1
+  },
+  {
+    "name": "layer 24",
+    "texture": "/layer24.png",
+    "position": { "x": -0.008, "y": -0.012, "z": -0.05 },
+    "scale": 1.6,
+    "visible": true,
+    "opacity": 1
+  }
+]
