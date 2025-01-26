@@ -1,11 +1,15 @@
 body {
   margin: 0;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#webgl {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background-color: red;
+.canvas-container {
+  width: 50vw;
+  height: 90vh;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: auto;
 }

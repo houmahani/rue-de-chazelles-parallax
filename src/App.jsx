@@ -1,12 +1,13 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import Layer from './components/Layer.jsx'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Pane } from 'tweakpane'
 import layersData from './utils/layers.json'
 
 const App = () => {
   const [layers, setLayers] = useState(layersData)
+  const mouse = useRef({ x: 0, y: 0 })
 
   useEffect(() => {
     const pane = new Pane()
@@ -93,16 +94,28 @@ const App = () => {
     return () => pane.dispose()
   }, [])
 
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      mouse.current.x = (event.clientX / window.innerWidth - 0.5) * 2
+      mouse.current.y = -(event.clientY / window.innerHeight - 0.5) * 2
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
   return (
-    <Canvas
-      style={{ height: '100vh' }}
-      camera={{ position: [0, 0, 1], fov: 75 }}
-    >
-      {layers.map((layer, i) =>
-        layer.visible ? <Layer key={i} {...layer} /> : null
-      )}
-      <OrbitControls enableZoom={true} />
-    </Canvas>
+    <div className="canvas-container">
+      <Canvas
+        style={{ height: '100vh' }}
+        camera={{ position: [0, 0, 1], fov: 75 }}
+      >
+        {layers.map((layer, i) =>
+          layer.visible ? <Layer key={i} {...layer} mouse={mouse} /> : null
+        )}
+        <OrbitControls enableZoom={false} />
+      </Canvas>
+    </div>
   )
 }
 
