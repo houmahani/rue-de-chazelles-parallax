@@ -24,6 +24,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/prop-types': 'off', // Disable prop-types as React projects often use TypeScript
     'react/react-in-jsx-scope': 'off', // Disable for React 17+ where importing React is no longer needed
+    'react/no-unknown-property': 'off', // Disable unknown properties errors (fixes for R3F & three.js)
   },
   settings: {
     react: {
