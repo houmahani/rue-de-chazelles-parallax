@@ -1,13 +1,15 @@
+import { useEffect, useRef, useState } from 'react'
+import { LinearFilter } from 'three'
 import { useTexture } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
-import { useEffect, useRef, useState } from 'react'
 
 const Layer = ({ texture, position, opacity, scale, mouse }) => {
-  console.log(mouse)
-
   const meshRef = useRef()
-  const map = useTexture(texture)
   const [aspect, setAspect] = useState(1)
+  const map = useTexture(texture)
+
+  map.minFilter = LinearFilter
+  map.magFilter = LinearFilter
 
   useEffect(() => {
     const { width, height } = map.image
@@ -16,7 +18,7 @@ const Layer = ({ texture, position, opacity, scale, mouse }) => {
 
   useFrame(() => {
     if (meshRef.current) {
-      const depthFactor = position.z * 0
+      const depthFactor = position.z * 0.2
       meshRef.current.position.x = position.x + mouse.current.x * depthFactor
       meshRef.current.position.y = position.y + mouse.current.y * depthFactor
     }
@@ -29,7 +31,13 @@ const Layer = ({ texture, position, opacity, scale, mouse }) => {
       scale={[aspect * scale, scale, scale]}
     >
       <planeGeometry args={[1, 1]} />
-      <meshBasicMaterial map={map} transparent opacity={opacity} />
+      <meshBasicMaterial
+        map={map}
+        transparent
+        opacity={opacity}
+        premultipliedAlpha={false}
+        alphaTest={0.1}
+      />
     </mesh>
   )
 }
