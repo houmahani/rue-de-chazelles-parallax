@@ -18,7 +18,7 @@ const Layer = ({ texture, position, opacity, scale, mouse }) => {
 
   useFrame(() => {
     if (meshRef.current) {
-      const depthFactor = position.z * 0.2
+      const depthFactor = position.z * 0.15
       meshRef.current.position.x = position.x + mouse.current.x * depthFactor
       meshRef.current.position.y = position.y + mouse.current.y * depthFactor
     }
