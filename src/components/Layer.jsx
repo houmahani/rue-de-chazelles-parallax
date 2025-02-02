@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import { LinearFilter } from 'three'
 import { useTexture } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
@@ -7,9 +6,6 @@ const Layer = ({ texture, position, opacity, scale, mouse }) => {
   const meshRef = useRef()
   const [aspect, setAspect] = useState(1)
   const map = useTexture(texture)
-
-  map.minFilter = LinearFilter
-  map.magFilter = LinearFilter
 
   useEffect(() => {
     const { width, height } = map.image

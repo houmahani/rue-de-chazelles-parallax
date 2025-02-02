@@ -88,14 +88,6 @@
     "opacity": 1
   },
   {
-    "name": "layer 12",
-    "texture": "/layer12.webp",
-    "position": { "x": 0.056, "y": 0, "z": 0.29 },
-    "scale": 1.5,
-    "visible": false,
-    "opacity": 1
-  },
-  {
     "name": "layer 13",
     "texture": "/layer13.webp",
     "position": { "x": 0.065, "y": -0.115, "z": 0.48 },
@@ -156,14 +148,6 @@
     "texture": "/layer22.webp",
     "position": { "x": 0.05, "y": -0.18, "z": 0.19 },
     "scale": 2.5,
-    "visible": true,
-    "opacity": 1
-  },
-  {
-    "name": "layer 23",
-    "texture": "/layer23.webp",
-    "position": { "x": 0.05, "y": -0.105, "z": 0.29 },
-    "scale": 2.05,
     "visible": true,
     "opacity": 1
   },

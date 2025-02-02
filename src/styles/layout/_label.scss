@@ -1,0 +1,107 @@
+.label {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  width: 320px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  color: #000000;
+  box-shadow: 0px 5px 10px rgba(171, 171, 171, 0.5);
+  border-radius: 10px;
+  line-height: 1.5;
+  transition: opacity 2s ease 1s;
+  opacity: 0;
+
+  &.is-loaded {
+    opacity: 1;
+  }
+
+  @media (min-width: 1860px) {
+    display: block;
+  }
+}
+
+.mobile {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+
+  p {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #777;
+  }
+
+  @media (min-width: 1080px) {
+    display: none;
+  }
+}
+
+/* Typography */
+h2 {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: #000000;
+}
+
+.sub {
+  font-size: 0.7rem;
+  color: #777;
+  margin: 0.2rem 0;
+}
+
+/* Section Spacing */
+.group {
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.about {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: #949494;
+}
+
+.about p {
+  margin: 0.3rem 0;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* Divider */
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
