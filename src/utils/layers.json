@@ -50,118 +50,102 @@
   {
     "name": "layer 7",
     "texture": "/layer7.webp",
-    "position": { "x": -0.004, "y": -0.127, "z": 0.615 },
-    "scale": 1,
-    "visible": true,
-    "opacity": 1
-  },
-  {
-    "name": "layer 8",
-    "texture": "/layer8.webp",
     "position": { "x": 0.05, "y": -0.14, "z": 0.55 },
     "scale": 1.1,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 9",
-    "texture": "/layer9.webp",
+    "name": "layer 8",
+    "texture": "/layer8.webp",
     "position": { "x": 0.052, "y": -0.14, "z": 0.54 },
     "scale": 1.12,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 10",
-    "texture": "/layer10.webp",
+    "name": "layer 9",
+    "texture": "/layer9.webp",
     "position": { "x": 0.1, "y": -0.085, "z": 0.5 },
     "scale": 1.4,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 11",
-    "texture": "/layer11.webp",
+    "name": "layer 10",
+    "texture": "/layer10.webp",
     "position": { "x": 0, "y": -0.137, "z": 0.61 },
     "scale": 1,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 13",
-    "texture": "/layer13.webp",
+    "name": "layer 11",
+    "texture": "/layer11.webp",
     "position": { "x": 0.065, "y": -0.115, "z": 0.48 },
     "scale": 1.4,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 14",
-    "texture": "/layer14.webp",
+    "name": "layer 12",
+    "texture": "/layer12.webp",
     "position": { "x": 0.085, "y": -0.073, "z": 0.43 },
     "scale": 1.7,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 15",
-    "texture": "/layer15.webp",
+    "name": "layer 13",
+    "texture": "/layer13.webp",
     "position": { "x": 0.118, "y": -0.053, "z": 0.378 },
     "scale": 1.97,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 16",
-    "texture": "/layer16.webp",
+    "name": "layer 14",
+    "texture": "/layer14.webp",
     "position": { "x": -0.012, "y": -0.148, "z": 0.58 },
     "scale": 1.1,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 18",
-    "texture": "/layer18.webp",
+    "name": "layer 15",
+    "texture": "/layer15.webp",
     "position": { "x": -0.013, "y": -0.127, "z": 0.56 },
     "scale": 1.1,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 19",
-    "texture": "/layer19.webp",
+    "name": "layer 16",
+    "texture": "/layer16.webp",
     "position": { "x": -0.04, "y": -0.142, "z": 0.54 },
     "scale": 1.2,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 20",
-    "texture": "/layer20.webp",
-    "position": { "x": 0.028, "y": -0.004, "z": 0.13 },
-    "scale": 1.75,
-    "visible": true,
-    "opacity": 1
-  },
-  {
-    "name": "layer 22",
-    "texture": "/layer22.webp",
+    "name": "layer 17",
+    "texture": "/layer17.webp",
     "position": { "x": 0.05, "y": -0.18, "z": 0.19 },
     "scale": 2.5,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 24",
-    "texture": "/layer24.webp",
+    "name": "layer 18",
+    "texture": "/layer18.webp",
     "position": { "x": -0.008, "y": -0.2288, "z": 0.17 },
     "scale": 2,
     "visible": true,
     "opacity": 1
   },
   {
-    "name": "layer 25",
-    "texture": "/layer25.webp",
+    "name": "layer 19",
+    "texture": "/layer19.webp",
     "position": { "x": -0.007, "y": -0.027, "z": 0.042 },
     "scale": 1.32,
     "visible": true,
