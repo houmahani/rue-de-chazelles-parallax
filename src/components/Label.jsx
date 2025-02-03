@@ -1,50 +1,68 @@
+import { useState } from 'react'
+
 const Label = ({ isLoaded }) => {
+  const [showInfo, setShowInfo] = useState(false)
   return (
     <>
-      <div className={`label mobile ${isLoaded ? 'is-loaded' : ''}`}>
-        <div>
-          <h3>Bartholdi&apos;s Statue of Liberty, 1884</h3>
-          <p>
-            {' '}
-            Paris Musées CCØ -{' '}
-            <a
-              href="https://www.carnavalet.paris.fr/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Musée Carnavalet - Histoire de Paris
-            </a>
-          </p>
+      {/* Info Button */}
+      {!showInfo && (
+        <button className="info-toggle" onClick={() => setShowInfo(!showInfo)}>
+          i
+        </button>
+      )}
+
+      {/** Mobile Info Card */}
+      {showInfo && (
+        <div className={`label mobile ${isLoaded ? 'is-loaded' : ''}`}>
+          <button className="close-button" onClick={() => setShowInfo(false)}>
+            ×
+          </button>
+          <div>
+            <h3>Bartholdi&apos;s Statue of Liberty, 1884</h3>
+            <p>
+              {' '}
+              Paris Musées CCØ -{' '}
+              <a
+                href="https://www.carnavalet.paris.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Musée Carnavalet - Histoire de Paris
+              </a>
+            </p>
+          </div>
+          <div>
+            <p>
+              Inspired by{' '}
+              <a
+                href="https://rococoinparallax.webflow.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Designwand
+              </a>{' '}
+              - Built with{' '}
+              <a
+                href="https://threejs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Three.js
+              </a>{' '}
+              -{' '}
+              <a
+                href="https://x.com/houm_kn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @houm_kn
+              </a>{' '}
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            Inspired by{' '}
-            <a
-              href="https://rococoinparallax.webflow.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Designwand
-            </a>{' '}
-            - Built with{' '}
-            <a
-              href="https://threejs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Three.js
-            </a>{' '}
-            -{' '}
-            <a
-              href="https://x.com/houm_kn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @houm_kn
-            </a>{' '}
-          </p>
-        </div>
-      </div>
+      )}
+
+      {/** Desktop Info Card */}
       <div className={`label ${isLoaded ? 'is-loaded' : ''} `}>
         <p className="italic">On right</p>
 
