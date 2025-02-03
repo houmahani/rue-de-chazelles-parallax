@@ -7,8 +7,8 @@ const useParallax = (canvasHeight = window.innerHeight * 0.9) => {
   useEffect(() => {
     const handlePointerMove = (event) => {
       const { innerWidth } = window
-      const yOffset = isMobile ? -0.6 : -1
-      const sensitivityY = isMobile ? 0.6 : 1
+      const yOffset = isMobile ? -0.65 : -1
+      const sensitivityY = isMobile ? 0.65 : 1
 
       mouse.current.x = (event.clientX / innerWidth) * 2 - 1
       mouse.current.y =
