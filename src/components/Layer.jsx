@@ -6,6 +6,7 @@ const Layer = ({ texture, position, opacity, scale, mouse }) => {
   const meshRef = useRef()
   const [aspect, setAspect] = useState(1)
   const map = useTexture(texture)
+  const easeLerp = (start, end, factor) => start + (end - start) * factor
 
   useEffect(() => {
     const { width, height } = map.image
@@ -14,9 +15,19 @@ const Layer = ({ texture, position, opacity, scale, mouse }) => {
 
   useFrame(() => {
     if (meshRef.current) {
-      const depthFactor = position.z * 0.15
-      meshRef.current.position.x = position.x + mouse.current.x * depthFactor
-      meshRef.current.position.y = position.y + mouse.current.y * depthFactor
+      const depthFactor = position.z * 0.2
+
+      meshRef.current.position.x = easeLerp(
+        meshRef.current.position.x,
+        position.x + mouse.current.x * depthFactor,
+        0.1
+      )
+
+      meshRef.current.position.y = easeLerp(
+        meshRef.current.position.y,
+        position.y + mouse.current.y * depthFactor,
+        0.1
+      )
     }
   })
 
