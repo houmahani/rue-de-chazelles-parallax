@@ -2,11 +2,12 @@ import { useEffect, useRef, useState } from 'react'
 import { useTexture } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
+const easeLerp = (start, end, factor) => start + (end - start) * factor
+
 const Layer = ({ texture, position, opacity, scale, mouse }) => {
   const meshRef = useRef()
   const [aspect, setAspect] = useState(1)
   const map = useTexture(texture)
-  const easeLerp = (start, end, factor) => start + (end - start) * factor
 
   useEffect(() => {
     const { width, height } = map.image
@@ -15,7 +16,7 @@ const Layer = ({ texture, position, opacity, scale, mouse }) => {
 
   useFrame(() => {
     if (meshRef.current) {
-      const depthFactorX = position.z * 0.2
+      const depthFactorX = position.z * 0.17
       const depthFactorY = position.z * 0.17
 
       meshRef.current.position.x = easeLerp(
