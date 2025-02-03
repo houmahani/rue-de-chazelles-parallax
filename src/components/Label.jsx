@@ -6,7 +6,7 @@ const Label = ({ isLoaded }) => {
           <h3>Bartholdi&apos;s Statue of Liberty, 1884</h3>
           <p>
             {' '}
-            Image courtesy of Paris Musées, under CCØ license -{' '}
+            Paris Musées CCØ -{' '}
             <a
               href="https://www.carnavalet.paris.fr/"
               target="_blank"
