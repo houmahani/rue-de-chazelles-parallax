@@ -16,7 +16,7 @@ const Layer = ({ texture, position, opacity, scale, mouse }) => {
   useFrame(() => {
     if (meshRef.current) {
       const depthFactorX = position.z * 0.2
-      const depthFactorY = position.z * 0.15
+      const depthFactorY = position.z * 0.17
 
       meshRef.current.position.x = easeLerp(
         meshRef.current.position.x,
