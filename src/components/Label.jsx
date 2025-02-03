@@ -64,7 +64,7 @@ const Label = ({ isLoaded }) => {
 
       {/** Desktop Info Card */}
       <div className={`label ${isLoaded ? 'is-loaded' : ''} `}>
-        <p className="italic">On right</p>
+        <p className="italic">On left</p>
 
         <div className="group">
           <h3>Bartholdi&apos;s Statue of Liberty, 1884</h3>

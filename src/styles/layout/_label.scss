@@ -23,8 +23,9 @@
 }
 
 .info-toggle {
+  display: block;
   position: absolute;
-  bottom: 20px;
+  top: 90%;
   right: 20px;
   padding: 10px 15px;
   background: rgba(0, 0, 0, 0.7);
@@ -35,6 +36,10 @@
   cursor: pointer;
   transition: opacity 0.3s ease;
   z-index: 2;
+
+  @media (min-width: 1080px) {
+    display: none;
+  }
 }
 
 .mobile {
@@ -43,7 +48,7 @@
   max-width: 100%;
   width: 95%;
   position: absolute;
-  bottom: 20px;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
 
