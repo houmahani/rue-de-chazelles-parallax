@@ -20,24 +20,21 @@ const Label = ({ isLoaded }) => {
           <p>
             Inspired by{' '}
             <a
-              href="https://designwand.co/"
+              href="https://rococoinparallax.webflow.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Designwand
-            </a>
-          </p>
-          <p>
-            Built with{' '}
+            </a>{' '}
+            - Built with{' '}
             <a
               href="https://threejs.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Three.js
-            </a>
-          </p>
-          <p>
+            </a>{' '}
+            -{' '}
             <a
               href="https://x.com/houm_kn"
               target="_blank"

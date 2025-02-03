@@ -1,9 +1,8 @@
 .label {
   display: none;
-  position: absolute;
-  bottom: 5%;
-  left: 2%;
+  position: relative;
   width: 320px;
+  max-width: 320px;
   padding: 20px;
   font-family: Arial, sans-serif;
   text-align: left;
@@ -18,21 +17,20 @@
     opacity: 1;
   }
 
-  @media (min-width: 1860px) {
+  @media (min-width: 1080px) {
     display: block;
   }
 }
 
 .mobile {
   display: block;
+  max-width: none;
   width: 100%;
   position: relative;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: space-between;
   margin: 1rem;
-  padding: 0;
+  padding: 0 1rem;
   background: none;
   border: none;
   box-shadow: none;
